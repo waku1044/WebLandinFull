@@ -9,23 +9,55 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
     <link rel="stylesheet" href="style.css" />
     <title>Web Landing Full</title>
   </head>
   <body>
-    <div class="">
-      <header>
-        <picture>
-          <img src="./assets/logo.svg" alt="Logo" />
-        </picture>
-        <nav>
-          <ul>
-            <li><a href="">EMPRESA</a></li>
-            <li><a href="">SERVICIOS</a></li>
-            <li><a href="">NUESTROS TRABAJOS</a></li>
-            <li><a href="">HACE TU CONSULTA</a></li>
-          </ul>
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <a class="navbar-brand" href="#">Offcanvas navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+        ...
+      </div>
+    </nav> -->
+    
+      <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg fixed-top ">
+          <div class="container-fluid">
+            <a  href="#"><img src="/assets/logo.svg" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">                 
+                    
+                  <li class="nav-item"v><a class="nav-link text_nav" href="#empresa">EMPRESA</a></li>
+                  <li class="nav-item"v><a class="nav-link text_nav" href="#servicio">SERVICIOS</a></li>
+                  <li class="nav-item"v><a class="nav-link text_nav" href="#trabajos">NUESTROS TRABAJOS</a></li>
+                  <li class="nav-item"><a class="nav-link text_nav" href="#consulta">HACE TU CONSULTA</a></li>
+                      
+                    
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
         </nav>
+       
       </header>
       <div class="relative">
         <div id="carouselExampleCaptions" class="carousel slide">
@@ -111,7 +143,7 @@
           </button>
         </div>
 
-        <div class="absolute">
+        <!-- <div class="absolute">
           <h1 class="text-white">
             SOLUCIONES<br />PARA LA CONSTRUCCION EN SECO
           </h1>
@@ -120,9 +152,10 @@
             <button class="btn botonbg">PEDI PRESUPUESTO</button>
           </div>
         </div>
-      </div>
-    </div>
+      </div> -->
+    
     <main class="container-fluid">
+      <a name="empresa"></a>
       <article class="py-5">
         <section class="row">
           <h2 class="col-12 text-center title">EMPRESA</h2>
@@ -145,6 +178,7 @@
         </section>
       </article>
     </main>
+    <a name="servicio"></a>
     <article class="relative bg-secondary mb-5">
       <section class="background"></section>
       <div class="anuncio">
@@ -183,8 +217,11 @@
         </p>
       </div>
     </article>
+    
     <div class="clearfix"></div>
-    <div class="mb-5">
+    <a name="trabajos"></a>
+
+    <div class="my-5">
       <h2 class="text-center galeriatext title">Galería/Trabajos</h2>
       <div class="grid-layout">
         <div class="caja c1">
@@ -252,6 +289,8 @@
         </div>
       </div>
     </div>
+    <a name="consulta"></a>
+
     <h2 class="text-center galeriatext title my-4">Hacé tu consulta</h2>
     <div class="container-fluid">  
 
@@ -279,18 +318,21 @@
         </section>
         <section class="col-12 col-sm-6">
           <p>IMPORTANTE: Para asesorarte mejor, te sugerimos que no olvides incluir las medidas del espacio a cotizar indicando ancho, alto y profundidad. También, podés agregar fotos para ilustrar mejor tu consulta.</p>
-          <ul>
-            <li>ventas@ventas.com.ar</li>
-            <li>11227 48608</li>
-            <li>11227-48608</li>
-            <li>Lunes a viernes de 8 a 17 hs. | Sábados de 8 a 13 hs.</li>
-            <li>Capital, Bs As, Argentina.</li>
+          <ul class="contac">
+            <li><i class="fa-solid fa-envelope fa-xl pe-3" style="color: #ba0100;"></i>ventas@ventas.com.ar </li>
+            <li ><i class="fa-solid fa-phone  fa-xl pe-3" style="color: #ba0100;"></i>11227 48608</li>
+            <li ><i class="fa-solid fa-mobile fa-xl pe-3" style="color: #ba0100;"></i>11227-48608</li>
+            <li ><i class="fa-solid fa-clock fa-xl pe-3" style="color: #ba0100;"></i>Lunes a viernes de 8 a 17 hs. | Sábados de 8 a 13 hs.</li>
+            <li ><i class="fa-solid fa-location-dot fa-xl pe-3" style="color: #ba0100;"></i>Capital, Bs As, Argentina.</li>
           </ul>
         </section>
-      </article>
-      <footer class="bg-dark mt-3 row">
-        <p class="text-white text-center py-2">Copyright © 2023 by Destino Web</p>
-      </footer>
+      </article> 
+     
+
+        <footer class="bg-dark mt-3 row">
+          <p class="text-white text-center py-2">Copyright © 2023 by Destino Web</p>
+        </footer>
+      
     </div>
 
     <script
