@@ -61,6 +61,11 @@ nav > ul > li {
   background-size: 100% cover;
   background-position: center;
 }
+.forma{
+  position: relative;
+  top: 10px;
+  width: 100%;
+}
 .title_service{
   
   font-size: 1.5rem;
@@ -137,10 +142,13 @@ h3{
    top: 200px;
    display: flex;
   flex-direction: column; 
+  z-index: 5;
   /* height: 20rem; */
   /* font-size: .5rem; */
-  min-width: 12rem;
-  max-width: 33%;
+  /* min-width: 12rem;*/
+  width: 47%;
+  /* height: 140px; */
+  /* max-width: 33%;  */
   /* gap: 2px; */
   padding: 20px;
   border-radius: 5px;
@@ -156,14 +164,15 @@ h3{
 }
 .grid-layout{
   display: grid; 
-  padding: 20px;
+  /* padding: 20px; */
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  justify-content: space-around;
+  /* justify-content: space-around; */
   /* background: #444; */
-  width: 100%;
-  margin: 0 auto;
-  gap: 10px;
+  /* width: 100%; */
+  /* margin: 0 auto; */
+  height: 80%;
+  gap: 5px;
   /* justify-content: space-between;
   align-content: space-between; */
 }
