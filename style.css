@@ -109,7 +109,7 @@ h3{
   text-align: center;
 }
 .service{
- margin-bottom: 500px;
+ margin-bottom: 30rem;
 }
 .carteleras{
  
@@ -136,6 +136,7 @@ h3{
   display: flex;
   flex-direction: column;
   width: 280px; 
+  height: 28rem;
   padding: 20px;
   border-radius: 5px;
   background: #fff;
@@ -237,11 +238,25 @@ h3{
   }
   
 }
+@media screen and (min-width: 570px) {
+  .service{
+    margin-bottom: 40rem;
+  }
+  .clearfix{
+    display : none;
+  }
+}
 
 @media screen and (min-width: 748px) {
   .carteleras{
     margin-bottom: 25%;
   }
+}
+@media screen and (min-width: 860px) {
+  .service{
+    margin-bottom: 15rem;
+  }
+  
 }
 @media screen and (min-width: 991px) {
   .carteleras{
