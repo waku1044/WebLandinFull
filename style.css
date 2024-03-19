@@ -3,9 +3,13 @@
   --text-color: #ffffff;
   --negro: #000000;
 }
+.clearfix{
+  clear: both;
+  height: 39rem;
+}
 p {
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+ 
   font-style: normal;
   font-weight: 400;
   line-height: 180%; /* 32.4px */
@@ -51,15 +55,14 @@ nav > ul > li {
 .btn {
   border-radius: 50px;
 }
+
 .fondo_servicios{
-  /* width: 100%; */
-  /* display: flex; */
-  /* height: 500px; */
-  position: relative;
+  height: 500px;
   background-image: url(assets/banner/bannerphoto1.svg);
   background-repeat: no-repeat;
-  background-size: 100% cover;
+  background-size: cover auto ;
   background-position: center;
+  
 }
 .forma{
   position: relative;
@@ -73,17 +76,7 @@ nav > ul > li {
 .parrafo_service{
   font-size: 1rem;
 }
-/* .absolute {
-  width: 45rem;
-  text-align: center;
-  padding: 30px;
-  position: absolute;
-  top: 35%;
-  left: 26%;
-  background: rgba(13, 12, 12, 0.4);
-  filter: blur(0.5px);
-  border-radius: 20px;
-} */
+
 .boton {
   background-color: var(--text-color);
   color: var(--bg-color);
@@ -112,75 +105,59 @@ h3{
   display:none;
 }
 .anuncio {
-  position: absolute;
-  top: 50px;
+  padding-top: 2rem;
   text-align: center;
 }
+.service{
+ margin-bottom: 30rem;
+}
 .carteleras{
-  /* position: absolute; */
+ 
   display : flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 65%;
-  
 }
 .checke{
   font-size: 5rem;
   text-align: center;
+  margin: 0 auto;
 }
 .icon{
   font-size: 3rem;
-  /* text-align: center; */
   margin: 0 auto;
 }
 .text_cartelera{
-  font-size: .7rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 .cartelera {
-  position: relative; 
-   top: 300px;
-   display: flex;
-  flex-direction: column; 
-  z-index: 5;
-  /* height: 20rem; */
-  /* font-size: .5rem; */
-  /* min-width: 12rem;*/
-  width: 47%;
-  /* height: 140px; */
-  /* max-width: 33%;  */
-  /* gap: 2px; */
+  display: flex;
+  flex-direction: column;
+  width: 280px; 
+  height: 28rem;
   padding: 20px;
   border-radius: 5px;
   background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.clearfix {
-  /* clear: both; */
-  height: 12rem;
-}
+
 .galeriatext{
   color: var(--bg-color); 
 }
+
+
 .grid-layout{
   display: grid; 
-  /* padding: 20px; */
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  /* justify-content: space-around; */
-  /* background: #444; */
-  /* width: 100%; */
-  /* margin: 0 auto; */
-  height: 80%;
-  gap: 5px;
-  /* justify-content: space-between;
-  align-content: space-between; */
+  grid-template-rows: repeat(4, 15rem);
+  gap:.5em;
 }
 .caja img{
-  display: block;
   width: 100%;
-  height: 100%;
+  height:  100%;
+  object-fit: cover;
 }
 .c1{
   grid-column: 1/2;
@@ -191,7 +168,7 @@ h3{
   grid-row: 1/2;
 }
 .c3{
-  grid-column: 3/5;
+  grid-column: 3/4;
   grid-row: 1/2;
 }
 
@@ -201,31 +178,115 @@ h3{
 }
 .c5{
   grid-column: 3/4;
-  grid-row: 2/4;
+  grid-row: 2/3;
 
 }
 .c6{
   grid-column: 1/3;
-  grid-row: 3/5;
+  grid-row: 3/4;
+  /* offset: 3; */
 
 }
 .c7{
   grid-column: 1/2;
-  grid-row: 5/6;
+  grid-row: 4/5;
 
 }
 .c8{
   grid-column: 2/3;
-  grid-row: 5/6;
+  grid-row: 4/5;
 }
 .c9{
   grid-column: 3/4;
-  grid-row: 4/6;
+  grid-row: 3/6;
+} 
+
+.text-import{
+  font-size: 5px;
 }
 .contac{
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  /* justify-content: center; */
+  
 }
-.contac li{
-  margin-bottom: 15px;
+.text_contac{
+  list-style: none;
+  /* width: 100%; */
+  margin-bottom: 1rem;
+  
+}
+@media screen and (min-width: 320px) {
+  .anuncio{
+    font-size: 8rem;
+  }
+  .carteleras{
+    margin-bottom: 40%;
+  }
+  
+}
+@media screen and (max-width: 320px) {
+  .carteleras{
+    margin-bottom: 80%;
+  }
+  
+}
+@media screen and (min-width: 321px) {
+  .carteleras{
+    margin-bottom: 15rem;
+  }
+  
+}
+@media screen and (min-width: 570px) {
+  .service{
+    margin-bottom: 40rem;
+  }
+  .clearfix{
+    display : none;
+  }
 }
 
+@media screen and (min-width: 748px) {
+  .carteleras{
+    margin-bottom: 25%;
+  }
+}
+@media screen and (min-width: 860px) {
+  .service{
+    margin-bottom: 15rem;
+  }
+  
+}
+@media screen and (min-width: 991px) {
+  .carteleras{
+    margin-bottom: 15%;
+  }
+  
+}
+@media screen and (min-width: 1200px) {
+  .fondo_servicios{
+    margin-bottom: 20%;
+  }
+  
+  .carteleras{
+    margin-bottom: 5%;
+    width: 50%;
+    /* position: relative;
+    top: 70px;
+    left: 300px; */
+    /* flex-wrap: nowrap; */
+  }
+  .anuncio{
+    
+    margin: auto;
+    /* font-size: 3rem; */
+  }
+  .parrafo_service{
+    font-size: 1.5rem;
+  }
+  .galeria-cuadro{
+    width: 70%;
+    /* height: 400px; */
+  }
+}
